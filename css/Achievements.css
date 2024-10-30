@@ -1,0 +1,77 @@
+/* Achievements */
+.Achievements {
+    text-align: center;
+    padding: 20px 0; /* زيادة padding لخلق المزيد من المساحة */
+    font-family: "Poetsen One", sans-serif;
+    background-color: #f9f9f9; /* خلفية فاتحة لتحسين الوضوح */
+}
+
+.Achievements h1 {
+    font-size: 40px;
+    color: #2c3e50; /* تغيير لون النص إلى لون أغمق */
+    margin-bottom: 20px; /* إضافة مسافة أسفل العنوان */
+}
+
+.gridContainer {
+    max-width: 900px; /* تحديد عرض أقصى للحاوية */
+    margin: 0 auto; /* محاذاة في الوسط */
+    display: grid;
+    grid-template-rows: repeat(3, 250px); /* استخدام repeat لتسهيل القراءة */
+    grid-template-columns: repeat(2, 400px); /* استخدام repeat لتسهيل القراءة */
+    gap: 20px; /* إضافة مسافة بين العناصر */
+    padding: 40px 20px;
+}
+
+.gridContainer .item1,
+.gridContainer .item2,
+.gridContainer .item3,
+.gridContainer .item4,
+.gridContainer .item5,
+.gridContainer .item6 {
+    text-align: center;
+    border: 1px solid #dcdcdc; /* إضافة إطار خفيف حول العناصر */
+    border-radius: 10px; /* زوايا دائرية للإطار */
+    padding: 10px; /* إضافة حشوة داخل العناصر */
+    background-color: #ffffff; /* خلفية بيضاء للعناصر */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف لتحسين المظهر */
+}
+
+.gridContainer .item2 img,
+.gridContainer .item4 img,
+.gridContainer .item6 img {
+    width: 100%; /* جعل الصورة تغطي عرض العنصر */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    border-radius: 10px; /* زوايا دائرية للصورة */
+}
+
+.gridContainer p {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400; /* زيادة الوزن ليكون أكثر وضوحاً */
+    font-size: 24px; /* تقليل حجم الخط قليلاً */
+    color: rgb(4, 0, 255); /* لون النص */
+    margin-top: 10px; /* إضافة مسافة أعلى الفقرة */
+}
+
+@media (max-width: 768px) {
+    .gridContainer {
+        grid-template-columns: 1fr; /* عمود واحد */
+    }
+
+    .gridContainer .item1,
+    .gridContainer .item2,
+    .gridContainer .item3,
+    .gridContainer .item4 {
+        width: 90%; /* تقليل عرض العناصر لتناسب الشاشات الصغيرة */
+        margin: 0 auto; /* توسيط العناصر */
+    }
+
+    .gridContainer .item1 img {
+        width: 100%; /* التأكد من أن الصورة تتناسب مع عرض العنصر */
+        height: auto; /* الحفاظ على نسبة الطول والعرض */
+    }
+
+    .Achievements img {
+        max-width: 90%; /* تقليل عرض الصورة في قسم الإنجازات */
+        height: auto; /* الحفاظ على نسبة الطول والعرض */
+    }
+}

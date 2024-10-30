@@ -1,0 +1,75 @@
+.aboutme {
+    text-align: center;    
+}
+
+.logo a {
+    color: black;
+    text-decoration: none; /* إزالة الخط السفلي */
+    font-weight: bold; /* جعل النص أكثر وضوحاً */
+}
+
+.aboutme h1 {
+    font-size: 36px; /* حجم أكبر للعناوين */
+    margin-bottom: 20px; /* مساحة إضافية تحت العنوان */
+}
+
+.aboutme h2 {
+    margin-top: 20px; /* إضافة مساحة فوق العنوان الفرعي */
+}
+
+.aboutme .row {
+    display: flex;
+    justify-content: center; /* محاذاة أفقية للوسط */
+    align-items: center; /* محاذاة عمودية للوسط */
+    gap: 40px; /* مسافة بين العناصر */
+}
+
+.aboutme .myimg img {
+    width: 300px; /* تحديد العرض */
+    height: 300px; /* تحديد الطول ليكون مساوياً للعرض */
+    border-radius: 50%; /* يجعل الصورة دائرية */
+    object-fit: cover; /* يضمن أن الصورة تغطي المساحة دون تشويه */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); /* إضافة ظل للصورة */
+}
+
+.aboutme .information {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* زيادة الظل للمعلومات */
+    padding: 20px; /* إضافة حشوة للمعلومات */
+    border-radius: 10px; /* زوايا دائرية للصندوق */
+    background-color: #f9f9f9; /* خلفية فاتحة للصندوق */
+}
+
+.aboutme .information p {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6; /* تحسين تباعد الأسطر */
+    color: #333; /* لون نص أكثر نعومة */
+}
+
+.aboutme .icons {
+    display: flex;
+    justify-content: center; /* محاذاة أفقية للوسط */
+    gap: 20px; /* مسافة بين الأيقونات */
+    margin-top: 20px; /* إضافة مسافة فوق الأيقونات */
+}
+
+.aboutme .icons i {
+    background-color: #fff;
+    font-size: 50px; /* حجم الأيقونة */
+    padding: 15px; /* إضافة حشوة حول الأيقونة */
+    border-radius: 50%; /* يجعل الأيقونة دائرية */
+    transition: background-color 0.3s, transform 0.3s; /* إضافة تأثير تحريك عند التمرير */
+}
+
+.aboutme .icons i:hover {
+    background-color: #e0e0e0; /* تغيير الخلفية عند التمرير */
+    transform: scale(1.1); /* تكبير الأيقونة عند التمرير */
+}
+
+@media (max-width: 768px) {
+    .aboutme .row {
+        flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+    }
+}
+

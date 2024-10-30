@@ -1,0 +1,70 @@
+@import './base.css';
+@import './header.css';
+@import './Posts.css';
+@import './aboutme.css';
+@import './contact.css';
+@import './footer.css';
+@import './Achievements.css';
+
+.Plog {
+    text-align: center;
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+.logo img {
+    max-width: 100%; /* تأكد من عدم تجاوز الشعار عرض الصفحة */
+    height: auto; /* الحفاظ على نسبة الطول والعرض */
+}
+
+.welcom {
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Poetsen One", sans-serif;
+}
+
+.welcom img {
+    width: 90%;
+    height: auto; /* الحفاظ على نسبة الطول والعرض */
+}
+
+/* عند عرض الشاشة أقل من 480 بكسل (الهواتف الذكية الصغيرة) */
+@media (max-width: 480px) {
+    .Plog {
+        font-size: 30px; /* تقليل حجم الخط للعنوان */
+    }
+
+    .welcom {
+        font-size: 18px; /* تقليل حجم الخط */
+    }
+
+    .post {
+        padding: 10px; /* تقليل padding في المشاركات */
+    }
+
+    .rating img {
+        width: 20px; /* تقليل حجم النجوم */
+        height: auto; /* الحفاظ على نسبة الطول والعرض */
+    }
+
+    .button {
+        width: 100%; /* جعل زر "Read More" بعرض كامل */
+        padding: 10px; /* إضافة padding */
+    }
+}
+
+/* عند عرض الشاشة أقل من 768 بكسل */
+@media (max-width: 768px) {
+    .posts .container {
+        display: flex;
+        flex-direction: column; /* التأكد من أن المشاركات تحت بعضها */
+        align-items: center; /* توسيط المحتوى */
+    }
+
+    .post {
+        width: 90%; /* تقليل العرض إلى 90% */
+        max-width: none; /* إزالة الحد الأقصى للعروض */
+        margin: 15px 0; /* تقليل الهوامش العمودية */
+        padding: 10px; /* تقليل الحشو */
+    }
+}
