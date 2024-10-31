@@ -17,7 +17,7 @@
     height: auto; /* الحفاظ على نسبة الطول والعرض */
 }
 
-.welcom {
+.welcome {
     text-align: center;
     padding: 20px 0;
     font-family: "Poetsen One", sans-serif;
@@ -34,7 +34,7 @@
         font-size: 30px; /* تقليل حجم الخط للعنوان */
     }
 
-    .welcom {
+    .welcome {
         font-size: 18px; /* تقليل حجم الخط */
     }
 
@@ -68,3 +68,4 @@
         padding: 10px; /* تقليل الحشو */
     }
 }
+

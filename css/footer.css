@@ -1,21 +1,23 @@
-/*start footer*/
+/* بداية الفوتر */
 .footer {
     background-color: #393e46;
     color: #fff;
-    padding: 15px 0;
+    padding: 10px 0; /* تقليل الحشوة */
+    margin: 0; /* تأكد من إزالة الهوامش الخارجية */
+}
+
+body {
+    margin: 0; /* إزالة الهوامش الخارجية للجسم */
+    padding: 0; /* إزالة الحشوات الخارجية للجسم */
 }
 
 .footer a {
     color: #fff;
-
 }
 
 .footer .row {
     gap: 35px;
 }
-
-
-
 
 .footer .footer-start {
     display: flex;
@@ -31,7 +33,6 @@
     align-items: center;
 }
 
-
 .footer .footer-start .logo a {
     font-size: 14px;
 }
@@ -40,22 +41,21 @@
     color: #F4F4F4;
     font-size: 14px;
     font-weight: 200;
-
 }
 
-.footer  .icons {
+.footer .icons {
     display: flex;
     flex-direction: column;
     gap: 1.5px;
     flex-wrap: wrap;
 }
-.footer .footer-start img{
+
+.footer .footer-start img {
     width: 40px;
     height: 40px;
 }
 
 .footer .icons img {
-
     border: 1px solid #fff;
     width: 15px;
     height: 15px;
@@ -63,6 +63,26 @@
     box-sizing: content-box;
 }
 
+/* إزالة الفراغ تحت الفوتر */
+body {
+    overflow: auto; /* تأكد من أن الجسم يمكنه التمرير إذا كان المحتوى كبيرًا */
+}
 
+.footer + * {
+    margin-top: 0; /* إزالة أي هوامش علوية */
+}
 
-/*end footer*/
+/* تأكد من ظهور الفوتر في الأسفل */
+html, body {
+    height: 100%; /* تأكد من أن الجسم يغطي كامل ارتفاع الصفحة */
+}
+
+main {
+    padding-bottom: 60px; /* إضافة مساحة أسفل المحتوى لضمان عدم تداخل الفوتر مع المحتوى */
+}
+
+footer {
+    position: relative; /* تأكد من أن الفوتر يكون في موقع صحيح */
+}
+
+/* نهاية الفوتر */
