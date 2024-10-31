@@ -23,19 +23,19 @@
     font-family: "Poetsen One", sans-serif;
 }
 
-.welcom img {
-    width: 90%;
+.welcome img {
+    width: 100%; /* جعل الصورة تتناسب مع عرض الشاشة */
     height: auto; /* الحفاظ على نسبة الطول والعرض */
 }
 
 /* عند عرض الشاشة أقل من 480 بكسل (الهواتف الذكية الصغيرة) */
 @media (max-width: 480px) {
     .Plog {
-        font-size: 30px; /* تقليل حجم الخط للعنوان */
+        font-size: 24px; /* تقليل حجم الخط */
     }
 
     .welcome {
-        font-size: 18px; /* تقليل حجم الخط */
+        font-size: 16px; /* تقليل حجم الخط */
     }
 
     .post {
@@ -49,7 +49,14 @@
 
     .button {
         width: 100%; /* جعل زر "Read More" بعرض كامل */
-        padding: 10px; /* إضافة padding */
+        padding: 15px; /* إضافة padding */
+        font-size: 16px; /* زيادة حجم الخط للزر */
+        transition: background-color 0.3s, color 0.3s; /* تأثير الانتقال */
+    }
+
+    .button:hover {
+        background-color: #d1c4e9; /* تغيير اللون عند التحويم */
+        color: #fff; /* تغيير لون النص عند التحويم */
     }
 }
 
@@ -65,7 +72,58 @@
         width: 90%; /* تقليل العرض إلى 90% */
         max-width: none; /* إزالة الحد الأقصى للعروض */
         margin: 15px 0; /* تقليل الهوامش العمودية */
-        padding: 10px; /* تقليل الحشو */
+        padding: 15px; /* إضافة padding */
+    }
+
+    .navbar ul {
+        text-align: center; /* توسيط العناصر في القائمة */
+        flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+        list-style-type: none; /* إزالة النقاط */
+        padding: 0;
+    }
+
+    .navbar ul li {
+        display: block; /* جعل العناصر تحت بعضها */
+        margin: 10px 0; /* إضافة مسافة عمودية */
+    }
+
+    .welcome img {
+        width: 100%; /* جعل الصورة تتناسب مع عرض الشاشة */
+    }
+
+    .post {
+        width: 100%; /* جعل كل منشور يأخذ عرض كامل */
+        margin-bottom: 15px; /* إضافة مساحة تحت كل منشور */
     }
 }
 
+/* تأكد من إعداد الأساسيات لجعل الموقع مستجيبًا */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%; /* ضبط عرض الحاوية */
+    max-width: 1200px; /* تحديد أقصى عرض */
+    margin: 0 auto; /* توسيط الحاوية */
+}
+
+.header, .footer {
+    text-align: center; /* توسيط المحتوى */
+}
+
+.navbar ul {
+    display: flex; /* استخدام flexbox لتوزيع العناصر */
+    justify-content: center; /* توسيط العناصر */
+    flex-wrap: wrap; /* السماح بتوزيع العناصر في عدة صفوف */
+    list-style-type: none; /* إزالة النقاط */
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block; /* جعل العناصر تظهر في صف */
+    margin: 0 15px; /* إضافة مسافة بين العناصر */
+}
